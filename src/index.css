@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: #fffafb;
+}
+.pagination {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  margin: 100px 0px;
+}
+
+.pagination .page-num {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.pagination .page-num:hover {
+  background-color: #fdaab3;
+}
+.pagination .active-page {
+  background-color: #fdaab3;
+}
+
+.exercise-card {
+  width: 360px;
+  height: 380px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* padding-bottom: 10px; */
+  margin: 60px;
+  transform: scale(1, 1);
+  transition: 0.3s all ease-in-out;
+}
+
+.exercise-card img {
+  height: 326px;
+}
+
+.exercise-card img:hover {
+  box-shadow: -1px 17px 17px 4px rgba(194, 183, 183, 0.78);
+}
+
+/* .react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+}
+.react-horizontal-scrolling-menu--wrapper
+  .react-horizontal-scrolling-menu--scroll-container {
+  width: 96%;
+  margin: auto;
+} */
+.react-horizontal-scrolling-menu--item {
+  /* padding: 30px; */
+  /* width: 270px;
+  height:280px; */
+}
+@media screen and (min-width: 1200px) {
+  .exercise-card {
+    width: 280px;
+  }
+  .react-horizontal-scrolling-menu--wrapper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 150px;
+  }
+  .react-horizontal-scrolling-menu--wrapper
+    .react-horizontal-scrolling-menu--scroll-container {
+    width: 96%;
+    margin: auto;
+  }
+
+  .react-horizontal-scrolling-menu--item {
+    margin-bottom: 90px;
+  }
+  .react-horizontal-scrolling-menu--arrow-right,
+  .react-horizontal-scrolling-menu--arrow-left {
+    height: 50px;
+    position: absolute;
+    top: 112%;
+  }
+
+  .react-horizontal-scrolling-menu--arrow-right {
+    right: -1%;
+    margin-right: 30px;
+  }
+  .react-horizontal-scrolling-menu--arrow-left {
+    left: 94%;
+  }
+}
